@@ -34,5 +34,12 @@ for (let driver = 0; driver < hacker1.length; driver++) {
     console.log(separate);
   }
   
+  // 3.2
+  let reverse = "";
+  for (let navigator = hacker2.length - 1; navigator >= 0; navigator--) {
+    reverse = hacker2[navigator];
+    console.log(reverse);
+  }
+  
  
   
