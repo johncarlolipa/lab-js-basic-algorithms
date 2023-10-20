@@ -41,5 +41,33 @@ for (let driver = 0; driver < hacker1.length; driver++) {
     console.log(reverse);
   }
   
- 
+  // 3.3
+  const minLength = Math.min(hacker1.length, hacker2.length);
+  let firstInOrder = "";
+  
+  for (let i = 0; i < minLength; i++) {
+    if (hacker1[i] < hacker2[i]) {
+      firstInOrder = hacker1;
+      break;
+    } else if (hacker1[i] > hacker2[i]) {
+      firstInOrder = hacker2;
+      break;
+    }
+  }
+  
+  if (firstInOrder === "") {
+    if (hacker1.length < hacker2.length) {
+      firstInOrder = hacker1;
+    } else {
+      firstInOrder = hacker2;
+    }
+  }
+  
+  if (firstInOrder === hacker1) {
+    console.log("The driver's name goes first.");
+  } else if (firstInOrder === hacker2) {
+    console.log("Yo, the navigator goes first definitely.");
+  } else {
+    console.log("What?! You both have the same name?");
+  }
   
