@@ -1,10 +1,10 @@
 console.log("I'm ready!");
 
-
-
 // Iteration 1: Names and Input
-//
-// Iteration 2: Conditionals
 
+const hacker1 = "Drivername";
+console.log(`The driver's name is ${hacker1}`);
 
-// Iteration 3: Loops
+const hacker2 = "Navigatorname";
+console.log(`The navigator's name is ${hacker2}`);
+
